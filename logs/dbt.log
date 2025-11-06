@@ -1,0 +1,103 @@
+[0m14:40:21.141736 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713f8dd20590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713f8d348190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713f8cd9bd90>]}
+
+
+============================== 14:40:21.143757 | e6ed302a-0e08-4303-8686-c8c2d317a8d0 ==============================
+[0m14:40:21.143757 [info ] [MainThread]: Running with dbt=1.10.13
+[0m14:40:21.144039 [debug] [MainThread]: running dbt with arguments {'log_path': 'logs', 'quiet': 'False', 'use_experimental_parser': 'False', 'profiles_dir': '/home/stigbd/.dbt', 'partial_parse': 'True', 'no_print': 'None', 'fail_fast': 'False', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'log_cache_events': 'False', 'invocation_command': 'dbt init jaffle_shop', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'cache_selected_only': 'False', 'use_colors': 'True', 'target_path': 'None', 'log_format': 'default', 'debug': 'False', 'warn_error': 'None', 'empty': 'None', 'introspect': 'True', 'indirect_selection': 'eager', 'version_check': 'True'}
+[0m14:40:21.151303 [debug] [MainThread]: Starter project path: /home/stigbd/src/stigbd/hello-dbt/.venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m14:40:21.152750 [info ] [MainThread]: 
+Your new dbt project "jaffle_shop" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:40:21.152980 [info ] [MainThread]: Setting up your profile.
+[0m14:42:20.246498 [info ] [MainThread]: Profile jaffle_shop written to /home/stigbd/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:42:20.247033 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 119.13483, "process_in_blocks": "0", "process_kernel_time": 0.228084, "process_mem_max_rss": "362592", "process_out_blocks": "80", "process_user_time": 2.804038}
+[0m14:42:20.247423 [debug] [MainThread]: Command `dbt init` succeeded at 14:42:20.247361 after 119.14 seconds
+[0m14:42:20.247626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713f52bdc050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713f52b91a30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x713f52bac8d0>]}
+[0m14:42:20.247824 [debug] [MainThread]: Flushing usage events
+[0m14:42:20.961717 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:46:34.388336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76bb3ad48590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76bb3a568190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76bb39fbbd90>]}
+
+
+============================== 14:46:34.390707 | 9a04a9c4-ae0d-4e12-afaa-d014521d2411 ==============================
+[0m14:46:34.390707 [info ] [MainThread]: Running with dbt=1.10.13
+[0m14:46:34.390995 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'use_experimental_parser': 'False', 'log_path': 'logs', 'empty': 'None', 'log_cache_events': 'False', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'debug': 'False', 'use_colors': 'True', 'no_print': 'None', 'write_json': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'partial_parse': 'True', 'warn_error': 'None', 'printer_width': '80', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'fail_fast': 'False', 'introspect': 'True', 'profiles_dir': '/home/stigbd/.dbt', 'cache_selected_only': 'False'}
+[0m14:46:34.400209 [info ] [MainThread]: dbt version: 1.10.13
+[0m14:46:34.400435 [info ] [MainThread]: python version: 3.13.8
+[0m14:46:34.400589 [info ] [MainThread]: python path: /home/stigbd/src/stigbd/hello-dbt/.venv/bin/python
+[0m14:46:34.400714 [info ] [MainThread]: os info: Linux-6.17.0-5-generic-x86_64-with-glibc2.42
+[0m14:46:35.482146 [info ] [MainThread]: Using profiles dir at /home/stigbd/.dbt
+[0m14:46:35.482400 [info ] [MainThread]: Using profiles.yml file at /home/stigbd/.dbt/profiles.yml
+[0m14:46:35.482544 [info ] [MainThread]: Using dbt_project.yml file at /home/stigbd/src/stigbd/hello-dbt/dbt_project.yml
+[0m14:46:35.482671 [info ] [MainThread]: adapter type: bigquery
+[0m14:46:35.482789 [info ] [MainThread]: adapter version: 1.10.2
+[0m14:46:35.482915 [info ] [MainThread]: Configuration:
+[0m14:46:35.483037 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:46:35.483146 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m14:46:35.483249 [info ] [MainThread]: Required dependencies:
+[0m14:46:35.483368 [debug] [MainThread]: Executing "git --help"
+[0m14:46:35.485166 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:46:35.485602 [debug] [MainThread]: STDERR: "b''"
+[0m14:46:35.485846 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:46:35.486100 [info ] [MainThread]: Connection:
+[0m14:46:35.486354 [info ] [MainThread]:   method: service-account
+[0m14:46:35.486618 [info ] [MainThread]:   database: sandbox-stid
+[0m14:46:35.486862 [info ] [MainThread]:   execution_project: sandbox-stid
+[0m14:46:35.487096 [info ] [MainThread]:   schema: jaffle_shop
+[0m14:46:35.487333 [info ] [MainThread]:   location: US
+[0m14:46:35.487580 [info ] [MainThread]:   priority: interactive
+[0m14:46:35.487808 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m14:46:35.488028 [info ] [MainThread]:   impersonate_service_account: None
+[0m14:46:35.488246 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m14:46:35.488471 [info ] [MainThread]:   job_retries: 1
+[0m14:46:35.488705 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m14:46:35.488926 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m14:46:35.489144 [info ] [MainThread]:   timeout_seconds: 300
+[0m14:46:35.489362 [info ] [MainThread]:   client_id: None
+[0m14:46:35.489591 [info ] [MainThread]:   token_uri: None
+[0m14:46:35.489817 [info ] [MainThread]:   compute_region: None
+[0m14:46:35.490034 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m14:46:35.490247 [info ] [MainThread]:   gcs_bucket: None
+[0m14:46:35.490455 [info ] [MainThread]:   dataproc_batch: None
+[0m14:46:35.490838 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m14:46:35.572826 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m14:46:35.573065 [debug] [MainThread]: On debug: select 1 as id
+[0m14:46:35.573234 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:46:35.573410 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: '[Errno 2] No such file or directory: 'sandbox-stid-b58093c1bde8.json''
+[0m14:46:35.573579 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m14:46:35.573706 [debug] [MainThread]: BigQuery adapter: Database Error
+  [Errno 2] No such file or directory: 'sandbox-stid-b58093c1bde8.json'
+[0m14:46:35.573835 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m14:46:35.573995 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m14:46:35.574126 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/stigbd/src/stigbd/hello-dbt/dbt_project.yml> not found
+
+[0m14:46:35.574247 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m14:46:35.574600 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.21685, "process_in_blocks": "32", "process_kernel_time": 0.229432, "process_mem_max_rss": "364800", "process_out_blocks": "88", "process_user_time": 2.762166}
+[0m14:46:35.574923 [debug] [MainThread]: Command `dbt debug` failed at 14:46:35.574871 after 1.22 seconds
+[0m14:46:35.575103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76baffffac40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76baffe41c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76bafffb4f30>]}
+[0m14:46:35.575290 [debug] [MainThread]: Flushing usage events
+[0m14:46:36.184628 [debug] [MainThread]: An error was encountered while trying to flush usage events
