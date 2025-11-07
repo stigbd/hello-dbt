@@ -22,6 +22,8 @@ As the previous section explained, dbt does not help you. There are, however, di
 In order to not have to install dbt and adapters into your system, you can create a small python project and virtual environment using uv:
 
 ```bash
+uv init hello-dbt
+cd hello-dbt
 uv add dbt-core dbt-bigquery
 uv run dbt init jaffle_shop
 ```
